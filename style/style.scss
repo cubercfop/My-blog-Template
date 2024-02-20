@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+.section-title {
+  text-align: center;
+  margin: 50px 0px 43px 0px;
+  h1 {
+    font-weight: 400;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    span {
+      background-color: black;
+      color: white;
+      padding: 5px;
+    }
+  }
+}
+body {
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+section {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+
+  .col7 {
+    width: 70%;
+    .box1 {
+      font-weight: 400;
+      background-color: white;
+      box-shadow: 2px 2px 15px #00000081;
+      margin-left: 30px;
+      padding-bottom: 20px;
+      margin-bottom: 35px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding-left: 20px;
+        .butonbox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            padding-right: 20px;
+            span {
+              background-color: #000;
+              color: white;
+              padding: 5px;
+            }
+          }
+          button {
+            background-color: transparent;
+            border: 1px solid #d2d1d1;
+            padding: 20px 30px;
+            &:hover {
+              background-color: #d2d1d1;
+            }
+          }
+          p {
+            padding-left: 20px;
+          }
+        }
+        h1 {
+          margin-top: 18px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .col3 {
+    width: 30%;
+    margin-right: 20px;
+    .blog {
+      background-color: white;
+      box-shadow: 2px 2px 15px #00000081;
+      .text2 {
+        padding: 5px 10px;
+      }
+      img {
+        width: 100%;
+      }
+      .text2 {
+        padding: 5px 0px 10px 10px;
+      }
+    }
+    .posts {
+      margin-top: 20px;
+      box-shadow: #00000081 inset;
+      background-color: #fff;
+      h1 {
+        font-weight: 400;
+        background-color: whitesmoke;
+        padding: 20px;
+      }
+      li {
+        border-bottom: 1px solid #d2d1d1;
+        div {
+          margin-left: 20px;
+          p {
+            margin-top: 8px;
+          }
+        }
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        &:hover {
+          background-color: #d2d1d1;
+        }
+      }
+      img {
+        width: 50px;
+      }
+    }
+    .tags {
+      box-shadow: 2px 2px 15px #00000081;
+      margin-top: 30px;
+      background-color: #fff;
+      h1 {
+        background-color: #d2d1d1;
+        padding: 20px;
+        font-weight: 400;
+      }
+      div {
+        p {
+          background-color: #000;
+          color: white;
+          padding: 2px;
+        }
+        span {
+          background-color: #d2d1d1;
+        }
+        padding: 10px;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto auto auto auto auto auto auto;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    .col7 {
+      width: 97%;
+    }
+    .col3 {
+      margin-left: 20px;
+      width: 93%;
+      .posts {
+        #not {
+          display: none;
+        }
+      }
+    }
+  }
+}
+footer {
+  p {
+    margin-top: 40px;
+    a {
+      color: #fff;
+    }
+  }
+  padding: 40px;
+  background: #01010181;
+  color: white;
+  .nb {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    &:hover {
+      background-color: rgb(206, 203, 203);
+    }
+  }
+  .na {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #989494;
+    border: none;
+    &:hover {
+      background-color: rgb(96, 95, 95);
+      cursor: not-allowed;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+    
+  }
+}
