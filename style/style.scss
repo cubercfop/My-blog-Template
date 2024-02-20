@@ -164,6 +164,12 @@ section {
         }
       }
     }
+    .tags {
+      gap: 0.5rem;
+      span{
+        padding: 5px 1  0px;
+      }
+    }
   }
 }
 footer {
@@ -197,6 +203,6 @@ footer {
   }
   @media screen and (max-width: 1024px) {
     margin-top: 40px;
-    
+
   }
 }

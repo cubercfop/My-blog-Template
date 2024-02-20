@@ -167,6 +167,12 @@ section .col3 .tags div span {
   section .col3 .posts #not {
     display: none;
   }
+  section .tags {
+    gap: 0.5rem;
+  }
+  section .tags span {
+    padding: 5px 1 0px;
+  }
 }
 
 footer {
